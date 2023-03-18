@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  font-size: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  background: url(Images/bg-image.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  height: 100%;
+
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.login__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+
+}
+.login__title{
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.login__input{
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: .8rem;
+  width: 20rem;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+.login__input::placeholder{
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1rem;
+  text-align: left;
+  opacity: 0.7;
+}
+.login-forgot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.login-forgot__text{
+  color: #fff;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.login-forgot input{
+  margin-right: .3rem;
+}
+.login-forgot__link{
+  color: #fff;
+  font-size: .8rem;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+.login-forgot__link:hover{
+  color: #0091ff;
+}
+
+.login__btn{
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 20rem;
+  background-color: transparent;
+  cursor: pointer;
+  padding: .8rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 200ms ease-in;
+}
+.login__btn:hover{
+  border-color: #0091ff;
+  color: #0091ff;
+}
+.login-register{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.login-register__text{
+  color: #fff;
+  font-size: .8rem;
+  text-align: left;
+}
+.login-register__link{
+  color: #fff;
+  font-size: .8rem;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+
+}
+.login-register__link:hover{
+  color: #0091ff;
+}
+
+@media (max-width: 576px){
+  *{
+    cursor: default !important;
+  }
+}
