@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Login Page</title>
-</head>
-<body>
-  <div class="login">
-    <div class="login__box">
-      <h1 class="login__title">Login</h1>
-      <input class="login__input" placeholder="username" type="text">
-      <input class="login__input" placeholder="password" type="password">
-      <div class="login-forgot">
-        <label class="login-forgot__text"><input type="checkbox">Remember me</label>
-        <a href="#" class="login-forgot__link">Forgot password</a>
-      </div>
-      <button class="login__btn">Login</button>
-      <div class="login-register">
-        <p class="login-register__text">Don't have an account yet ?</p>
-        <a href="#" class="login-register__link">Create account</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__box">
+        <h1 class="login__title">Login</h1>
+        <input
+          id="username-input"
+          class="login__input"
+          placeholder="username"
+          type="text"
+          onkeydown="usernameValidation()"
+        />
+        <span id="username-validation" class="validation-text"></span>
+        <input
+          id="password-input"
+          class="login__input"
+          placeholder="password"
+          type="password"
+          onkeydown="passwordValidation()"
+        />
+        <span id="password-validation" class="validation-text"></span>
+        <div class="login-forgot">
+          <label class="login-forgot__text"><input type="checkbox" />Remember me</label>
+          <a href="#" class="login-forgot__link">Forgot password</a>
+        </div>
+        <button class="login__btn">Login</button>
+        <div class="login-register">
+          <p class="login-register__text">Don't have an account yet ?</p>
+          <a href="#" class="login-register__link">Create account</a>
+        </div>
       </div>
     </div>
-  </div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -28,9 +28,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
-  text-align: center;
   border: 1px solid #ccc;
   border-radius: 1rem;
   padding: 1rem;
@@ -63,6 +61,9 @@ body{
   text-align: left;
   opacity: 0.7;
 }
+.validation-text{
+  font-size: .8rem;
+}
 .login-forgot{
   display: flex;
   align-items: center;
@@ -76,6 +77,23 @@ body{
 }
 .login-forgot input{
   margin-right: .3rem;
+}
+input[type="checkbox"]{
+  appearance: none;
+  height: 11px;
+  width: 11px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+input[type="checkbox"]:hover{
+  border-color: #0091ff;
+}
+input[type="checkbox"]:checked{
+  background-color: #0091ff;
+  border-color: #0091ff;
 }
 .login-forgot__link{
   color: #fff;
